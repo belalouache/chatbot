@@ -1,0 +1,46 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Image",
+      "url": "C:\\Users\\SergioRAFENOMANANA\\OneDrive - Alphedra\\Bureau\\5-ChatBot\\logo_alphedra.png",
+      "size": "stretch"
+    },
+    {
+      "type": "TextBlock",
+      "spacing": "medium",
+      "size": "default",
+      "weight": "bolder",
+      "text": "Bienvenue sur votre chatbot Alphedra",
+      "wrap": true,
+      "maxLines": 0
+    },
+    {
+      "type": "TextBlock",
+      "size": "default",
+      "isSubtle": true,
+      "text": "Client Egamo identifié, je vous écoute pour votre demande ",
+      "wrap": true,
+      "maxLines": 0
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "A propos de Alphedra",
+      "url": "https://alphedra.com/"
+    },
+    {
+      "type": "Action.OpenUrl",
+      "title": "Voir la liste de vos robots",
+      "url": "https://alphedra.com/offer-values/"
+    },
+    {
+      "type": "Action.OpenUrl",
+      "title": "Contacter un support Alphedra",
+      "url": "https://alphedra.com/contact/"
+    }
+  ]
+}

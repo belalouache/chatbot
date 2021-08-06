@@ -16,6 +16,7 @@ namespace CoreBot
         public string Text;
         public string AlteredText;
         public enum Intent {
+            Bonjour,
             BookFlight,
             Cancel,
             GetWeather,

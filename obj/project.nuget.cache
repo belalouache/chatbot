@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pcVIWT940IWZN7a7DzFlOn7dWO1W/gRYudRmMUGXDPbHEMuCbnxZMPeo3uBdcaJiUa2zKdqzzUeXgGE+3EqQ6g==",
+  "dgSpecHash": "zkTXXnBuhjqUbIXC5sfPdf3/6j/YglvbxESu8SgSLcl7jpSXtJI2DoTg6tCgo1uwKrdUsN8fesGNPvvxt3s/ng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SergioRAFENOMANANA\\source\\repos\\alphedracb\\CoreBot\\CoreBot.csproj",
+  "projectFilePath": "C:\\Users\\SergioRAFENOMANANA\\source\\repos\\chatbotcicd\\chatbot\\CoreBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SergioRAFENOMANANA\\.nuget\\packages\\adaptiveexpressions\\4.13.2\\adaptiveexpressions.4.13.2.nupkg.sha512",
     "C:\\Users\\SergioRAFENOMANANA\\.nuget\\packages\\antlr4.runtime.standard\\4.8.0\\antlr4.runtime.standard.4.8.0.nupkg.sha512",

@@ -52,8 +52,8 @@ namespace CoreBot.Dialogs
             }
 
             // Use the text provided in FinalStepAsync or the default if it is the first time.
-            var messageText = stepContext.Options?.ToString() ?? "What can I help you with today?\nSay something like \"Book a flight from Paris to Berlin on March 22, 2020\"";
-            var promptMessage = MessageFactory.Text(messageText, messageText, InputHints.ExpectingInput);
+            var messageText = stepContext.Options?.ToString() ?? "Bonjour je suis votre robot assistant Alphedra";
+            var promptMessage = MessageFactory.Text(messageText);
             return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = promptMessage }, cancellationToken);
         }
 
@@ -93,7 +93,8 @@ namespace CoreBot.Dialogs
 
                 default:
                     // Catch all for unhandled intents
-                    var didntUnderstandMessageText = $"Sorry, I didn't get that. Please try asking in a different way (intent was {luisResult.TopIntent().intent})";
+                    //Sorry, I didn't get that. Please try asking in a different way
+                    var didntUnderstandMessageText = $"Désolé mais je n'ai pas compris votre réponse , pourriez vous reformuler? (voulez vous dire: {luisResult.TopIntent().intent})";
                     var didntUnderstandMessage = MessageFactory.Text(didntUnderstandMessageText, didntUnderstandMessageText, InputHints.IgnoringInput);
                     await stepContext.Context.SendActivityAsync(didntUnderstandMessage, cancellationToken);
                     break;
@@ -123,7 +124,7 @@ namespace CoreBot.Dialogs
 
             if (unsupportedCities.Any())
             {
-                var messageText = $"Sorry but the following airports are not supported: {string.Join(',', unsupportedCities)}";
+                var messageText = $"Désolé mais la réponse que vous avez donné n'est pas claire: {string.Join(',', unsupportedCities)}";//Sorry but the following airports are not supported
                 var message = MessageFactory.Text(messageText, messageText, InputHints.IgnoringInput);
                 await context.SendActivityAsync(message, cancellationToken);
             }
@@ -147,7 +148,7 @@ namespace CoreBot.Dialogs
             }
 
             // Restart the main dialog with a different message the second time around
-            var promptMessage = "What else can I do for you?";
+            var promptMessage = "Que puis je faire d'autres pour vous?";
             return await stepContext.ReplaceDialogAsync(InitialDialogId, promptMessage, cancellationToken);
         }
     }

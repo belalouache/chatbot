@@ -52,7 +52,7 @@ namespace CoreBot.Dialogs
             }
 
             // Use the text provided in FinalStepAsync or the default if it is the first time.
-            var messageText = stepContext.Options?.ToString() ?? "Bonjour je suis votre robot assistant Alphedra";
+            var messageText = "Bonjour je suis votre robot assistant Alphedra";
             var promptMessage = MessageFactory.Text(messageText);
             return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = promptMessage }, cancellationToken);
         }

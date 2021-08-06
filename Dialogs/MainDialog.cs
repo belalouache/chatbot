@@ -53,7 +53,7 @@ namespace CoreBot.Dialogs
 
             // Use the text provided in FinalStepAsync or the default if it is the first time.
             //var messageText = stepContext.Options?.ToString() ?? "What can I help you with today?\nSay something like \"Book a flight from Paris to Berlin on March 22, 2020\"";
-            var messageText = "Bonjour je suis votre assistant Alphedra";
+            var messageText = "Bonjour je suis votre chatbot Alphedra";
             var promptMessage = MessageFactory.Text(messageText, messageText, InputHints.ExpectingInput);
             return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = promptMessage }, cancellationToken);
         }
@@ -66,12 +66,12 @@ namespace CoreBot.Dialogs
                 return await stepContext.BeginDialogAsync(nameof(BookingDialog), new BookingDetails(), cancellationToken);
             }
 
-            // Call LUIS and gather any potential booking details. (Note the TurnContext has the response to the prompt.)Z
+            // Call LUIS and gather any potential booking details. (Note the TurnContext has the response to the prompt.)
             var luisResult = await _luisRecognizer.RecognizeAsync<FlightBooking>(stepContext.Context, cancellationToken);
-            /*switch (luisResult.TopIntent().intent)
+            switch (luisResult.TopIntent().intent)
             {
                 case FlightBooking.Intent.BookFlight:
-                    await ShowWarningForUnsupportedCities(stepContext.Context, luisResult, cancellationToken);*/
+                    await ShowWarningForUnsupportedCities(stepContext.Context, luisResult, cancellationToken);
 
                     // Initialize BookingDetails with any entities we may have found in the response.
                     var bookingDetails = new BookingDetails()
@@ -85,7 +85,7 @@ namespace CoreBot.Dialogs
                     // Run the BookingDialog giving it whatever details we have from the LUIS call, it will fill out the remainder.
                     return await stepContext.BeginDialogAsync(nameof(BookingDialog), bookingDetails, cancellationToken);
 
-                /*case FlightBooking.Intent.GetWeather:
+                case FlightBooking.Intent.GetWeather:
                     // We haven't implemented the GetWeatherDialog so we just display a TODO message.
                     var getWeatherMessageText = "TODO: get weather flow here";
                     var getWeatherMessage = MessageFactory.Text(getWeatherMessageText, getWeatherMessageText, InputHints.IgnoringInput);
@@ -95,12 +95,11 @@ namespace CoreBot.Dialogs
                 default:
                     // Catch all for unhandled intents
                     //Sorry, I didn't get that. Please try asking in a different way
-                    var didntUnderstandMessageText = $"Désolé, pourriez vous reformuler votre demande?  (voulez vous dire: {luisResult.TopIntent().intent})";
+                    var didntUnderstandMessageText = $"Désolé pouvez vous reformuler votre demande, I  (voulez vous dire: {luisResult.TopIntent().intent})";
                     var didntUnderstandMessage = MessageFactory.Text(didntUnderstandMessageText, didntUnderstandMessageText, InputHints.IgnoringInput);
                     await stepContext.Context.SendActivityAsync(didntUnderstandMessage, cancellationToken);
                     break;
-            }*/
-
+            }
 
             return await stepContext.NextAsync(null, cancellationToken);
         }

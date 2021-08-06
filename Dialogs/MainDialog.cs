@@ -32,7 +32,7 @@ namespace CoreBot.Dialogs
             AddDialog(bookingDialog);
             AddDialog(new WaterfallDialog(nameof(WaterfallDialog), new WaterfallStep[]
             {
-                IntroStepAsync,
+               // IntroStepAsync,
                 ActStepAsync,
                 FinalStepAsync,
             }));

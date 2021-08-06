@@ -65,6 +65,7 @@ C:\Users\SergioRAFENOMANANA\source\repos\alphedracb\CoreBot\obj\Debug\netcoreapp
 C:\Users\SergioRAFENOMANANA\source\repos\alphedracb\CoreBot\obj\Debug\netcoreapp3.1\CoreBot.dll
 C:\Users\SergioRAFENOMANANA\source\repos\alphedracb\CoreBot\obj\Debug\netcoreapp3.1\CoreBot.pdb
 C:\Users\SergioRAFENOMANANA\source\repos\alphedracb\CoreBot\obj\Debug\netcoreapp3.1\CoreBot.genruntimeconfig.cache
+C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.DateTime.dll
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreapp3.1\appsettings-prod.json
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreapp3.1\CognitiveModels\FlightBooking.json
@@ -103,7 +104,6 @@ C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreap
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.dll
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.Choice.dll
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.DataTypes.TimexExpression.dll
-C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.DateTime.dll
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.Number.dll
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.NumberWithUnit.dll
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.dll
@@ -118,7 +118,6 @@ C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreap
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard1.3\System.Security.Cryptography.ProtectedData.dll
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard1.3\System.Security.Cryptography.ProtectedData.dll
-C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\obj\Debug\netcoreapp3.1\CoreBot.csproj.AssemblyReference.cache
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\obj\Debug\netcoreapp3.1\CoreBot.AssemblyInfoInputs.cache
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\obj\Debug\netcoreapp3.1\CoreBot.AssemblyInfo.cs
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\obj\Debug\netcoreapp3.1\CoreBot.csproj.CoreCompileInputs.cache
@@ -132,3 +131,4 @@ C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\obj\Debug\netcoreap
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\obj\Debug\netcoreapp3.1\CoreBot.dll
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\obj\Debug\netcoreapp3.1\CoreBot.pdb
 C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\obj\Debug\netcoreapp3.1\CoreBot.genruntimeconfig.cache
+C:\Users\SergioRAFENOMANANA\source\repos\chatbotcicd\chatbot\obj\Debug\netcoreapp3.1\CoreBot.csproj.AssemblyReference.cache
